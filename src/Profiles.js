@@ -5,9 +5,9 @@ class Profile extends Component{
     render() {
         const{link, image} = this.props.profile;
         return (
-            <div>
-                <a href={link}> <img src={image} alt="profile"/></a>
-            </div>
+            <span style={{ margin: 10 }}>
+                <a href={link}> <img src={image} alt="profile" style={{height: 100}}/></a>
+            </span>
         );
 
     }
