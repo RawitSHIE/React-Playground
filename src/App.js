@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import Projects from './Projects';
 import Profiles from  './Profiles'
+import profilepic from './assets/profile.png';
 class App extends Component {
     state = { displayBio : false};
     // constructor() {
@@ -28,6 +29,7 @@ class App extends Component {
 
         return (
             <div>
+                <img src={profilepic} alt='profile' className="profile"/>
                 <h1>Hello I'm Rawitshie</h1>
                 <p>My name is Rawit Lohakhachonrphan</p>
                 <p>I'm always looking for exp</p>
