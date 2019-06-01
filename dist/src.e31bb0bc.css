@@ -1,11 +1,11 @@
 @font-face {
     font-family: RobotoCondensed;
-    src: url(/roboto-condensed.light.6709adf4.ttf);
+    src: url(roboto-condensed.light.6709adf4.ttf);
     font-weight: 800;
 }
 @font-face {
     font-family: EconomicaBold;
-    src: url(/economica-bold.12a9e27d.ttf);
+    src: url(economica-bold.12a9e27d.ttf);
 }
 
 body {
@@ -24,4 +24,24 @@ h1, h2, h3, h4, h5{
     border-radius: 50%;
 }
 
-/*# sourceMappingURL=/src.e31bb0bc.css.map */
+.title-fade-out {
+    opacity: 0;
+    animation-name: fade-out;
+    animation-duration: 2s;
+}
+
+.title-fade-in {
+    opacity: 100;
+    animation-name: fade-in;
+    animation-duration: 2s;
+}
+
+@keyframes fade-out {
+    from { opacity: 100; }
+    to { opacity: 0; }
+}
+
+@keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 100; }
+}
