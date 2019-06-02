@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import Projects from './Projects';
 import Profiles from  './Profiles'
 import profilepic from '../assets/profile.png';
-import Jokes from './Jokes'
 import Title from './Title'
 class App extends Component {
     state = { displayBio : false};
@@ -42,8 +41,7 @@ class App extends Component {
                 <Projects />
                 <hr />
                 <Profiles />
-                <hr />
-                <Jokes />
+
             </div>
         )
     }
